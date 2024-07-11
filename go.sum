@@ -2,3 +2,5 @@ github.com/Anton-Kraev/wb-go-sdk v0.0.0-20240708170143-bbe0185e47fe h1:xQrO/stO8
 github.com/Anton-Kraev/wb-go-sdk v0.0.0-20240708170143-bbe0185e47fe/go.mod h1:YGUkRTPY1nNOE2t3fWtyLgqJcZHNoViMY2WDJoW3bvQ=
 github.com/Anton-Kraev/wb-go-sdk v0.0.0-20240708170358-424ed4f5b51e h1:dqIezM54A5aw6aWZ97LqQ31mKLilYCx7VegsxsyjQbQ=
 github.com/Anton-Kraev/wb-go-sdk v0.0.0-20240708170358-424ed4f5b51e/go.mod h1:YGUkRTPY1nNOE2t3fWtyLgqJcZHNoViMY2WDJoW3bvQ=
+github.com/go-telegram-bot-api/telegram-bot-api/v5 v5.5.1 h1:wG8n/XJQ07TmjbITcGiUaOtXxdrINDz1b0J1w0SzqDc=
+github.com/go-telegram-bot-api/telegram-bot-api/v5 v5.5.1/go.mod h1:A2S0CWkNylc2phvKXWBBdD3K0iGnDBGbzRpISP2zBl8=
