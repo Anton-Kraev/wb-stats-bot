@@ -9,3 +9,9 @@ run: build
 
 update-wb-sdk:
 	go get github.com/Anton-Kraev/wb-go-sdk@main
+
+db:
+	docker-compose up --build -d
+
+migrate:
+	./scripts/migrate.sh
