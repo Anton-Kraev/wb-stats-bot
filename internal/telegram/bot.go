@@ -1,17 +1,26 @@
 package telegram
 
 import (
+	"context"
 	"log"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
+
+	"github.com/Anton-Kraev/wb-stats-bot/internal/domain"
 )
 
-type Bot struct {
-	api *tgbotapi.BotAPI
+type tokenRepository interface {
+	Upsert(ctx context.Context, chatID int64, token domain.Token) error
+	Get(ctx context.Context, chatID int64) (domain.Token, error)
 }
 
-func NewBot(api *tgbotapi.BotAPI) *Bot {
-	return &Bot{api: api}
+type Bot struct {
+	api       *tgbotapi.BotAPI
+	tokenRepo tokenRepository
+}
+
+func NewBot(api *tgbotapi.BotAPI, tokenRepo tokenRepository) *Bot {
+	return &Bot{api: api, tokenRepo: tokenRepo}
 }
 
 func (b *Bot) Start() {
